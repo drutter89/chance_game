@@ -19,3 +19,7 @@ log(chalk.green(
 	chalk.blue.underline.bold('with a blue substring') +
 	' that becomes green again!'
 ));
+
+log(chalk.yellow(
+    "Lets lay down the ground rules for the game!"
+));
