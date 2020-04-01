@@ -17,10 +17,10 @@ log(chalk.red('Hello', chalk.underline.bgBlue('world') + '!'));
 log(chalk.green(
 	'I am a green line ' +
 	chalk.blue.underline.bold('with a blue substring') +
-    ' that becomes green again!'
+    ' that becomes green again! <br/> '
 ));
 
-break;
+
 
 log(chalk.yellow(
     "Lets lay down the ground rules for the game!"
