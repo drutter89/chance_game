@@ -1,0 +1,14 @@
+{
+  "name": "luck_game",
+  "version": "1.0.0",
+  "description": "A game where your have you select a guess and if right your choices double. You continue guessing until failure.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^3.0.0"
+  }
+}
