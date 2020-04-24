@@ -1,5 +1,7 @@
 const chalk = require('chalk');
 const log = console.log;
+const inquirer = require('inquirer');
+
 
 // // Combine styled and normal strings
 // log(chalk.blue('Hello') + ' World' + chalk.red('!'));
@@ -19,7 +21,28 @@ const log = console.log;
 // 	chalk.blue.underline.bold('with a blue substring') +
 //     ' that becomes green again!'
 // ));
-
+inquirer
+.prompt([
+    {type: 'list',
+    message: chalk.yellow("Lets lay down the ground rules for the game! Are you ready?"),
+    name: 'choice',
+    choices: [
+        'yes',
+        'no',
+        'maybe'
+    ]}
+])
+        /* Pass your questions in here */
+    .then(answers => {
+      // Use user feedback for... whatever!!
+      console.log(answers);
+    })
+    .catch(error => {
+      if(error.isTtyError) {
+        // Prompt couldn't be rendered in the current environment
+      } else {
+        // Something else when wrong
+      }
 
 log(chalk.black(
     '========================================================================================================'
@@ -60,3 +83,6 @@ log(chalk.black(
 log(chalk.red(
     "think you've got " + chalk.magentaBright.bold("the Luck of The Gods?")
 ))
+
+
+  });
